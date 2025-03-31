@@ -57,8 +57,7 @@ mysqli_close($conn);
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-image: url("img1 copy.jpg");
-            background-size: cover;
+            background-color:whitesmoke;
      
         }
    

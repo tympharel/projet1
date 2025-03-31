@@ -32,7 +32,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                 // Redirect based on user role
                 if ($user['role'] === 'admin') {
-                    header("Location: users-dashboard\dist\index.php"); // Redirect to admin dashboard
+                    header('Location: users-dashboard\dist\tableau.php'); // Redirect to admin dashboard
                 } else {
                     header("Location: gsticket.php"); // Redirect to user ticket page
                 }
@@ -178,9 +178,6 @@ mysqli_close($conn);
                 <label for="password" class="form-label">Mot de passe</label>
             </div>
             <button type="submit" class="submit-btn">Se connecter</button>
-            <p class="text-muted">
-                Pas encore de compte ? <a href="index.php">Inscription</a>
-            </p>
         </form>
     </div>
 </body>
